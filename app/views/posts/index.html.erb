@@ -15,6 +15,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
+        <td><%= post.author.name %></td>
         <td><%= post.content %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
